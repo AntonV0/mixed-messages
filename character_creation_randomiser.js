@@ -9,9 +9,12 @@ const capitalLetter2 = alphabet[Math.floor(Math.random()*alphabet.length)];
 // Returns random age between 18 and 100
 const age = Math.floor(Math.random() * 83) + 18;
 
-// Returns a random color
+// Returns random color
 const colors = ['red', 'green', 'blue', 'orange', 'yellow', 'purple', 'brown', 'pink', 'silver', 'gold', 'white', 'gray', 'black'];
 const favoriteColor = colors[Math.floor(Math.random()*colors.length)];
+
+// Generates message
+const message = `Welcome to the Character Creation Randomiser!\nYour new character's first name begins with '${capitalLetter1}' and their last name begins with '${capitalLetter2}'.\nYour character is ${age} years old and their favorite color is ${favoriteColor}.\nGood luck in your adventures!`
 
 /* Code checks:
 console.log(alphabet);
@@ -21,3 +24,5 @@ console.log(capitalLetter2);
 console.log(age);
 console.log(favoriteColor);
 */
+
+console.log(message);
